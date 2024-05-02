@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal</title>
+    <link rel="shortcut icon" href="youtube.png" type="image/x-icon">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .Container {
+            width: 1315px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #Salutation {
+            margin-left: 40px;
+        }
+
+        .Back {
+            width: 100px;
+            height: 30px;
+            margin-top: 30px;
+            margin-left: 200px;
+            border-radius: 50px;
+            color: white;
+            background-color: darkred;
+            font-size: 15px;
+            font-weight: bolder;
+        }
+
+        .Back:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Container">
+        <form style="margin-top: 20px; width: 500px;" action="/action_page.php">
+            <fieldset>
+                <legend>Personal Details</legend><br>
+                <label for="cars">Salutation</label><br>
+                <select id="Salutation" name="cars">
+                    <option value="None" selected>--None--</option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Miss">Miss</option>
+                </select><br><br>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="Gender">Gender:</label>
+                <input type="radio" id="male" name="Gender" value="male">
+                <label for="Male">Male</label>
+                <input type="radio" id="Female" name="Gender" value="Female">
+                <label for="Female">Female</label>
+                <input type="radio" id="Others" name="Gender" value="Others">
+                <label for="Others">Others</label><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="birthday">Date of Birth:</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <label for="Address">Address:</label><br>
+                <textarea name="message" rows="5" cols="30"></textarea><br><br>
+                <input type="submit"><br><br>
+            </fieldset>
+        </form>
+        <a href="index.html"><button class="Back">Go Back</button></a>
+    </div>
+</body>
+
+</html>
